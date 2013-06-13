@@ -10,7 +10,7 @@
   <description>
     Defines plugins and versions, default properties like Java home and version
   </description>
-  <inceptionyear>2013</inceptionyear>
+  <inceptionYear>2013</inceptionYear>
   <url>https://github.com/tom-layton/Maven</url>
   
   <prerequisites>
