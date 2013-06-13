@@ -3,7 +3,7 @@
   
   <groupId>com.tlayton</groupId>
   <artifactId>root-pom</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   
   <packaging>pom</packaging>
   <name>Main Parent POM for Maven Projects</name>
@@ -26,7 +26,7 @@
     <url>https://github.com/tom-layton/Maven</url>
     <connection>scm:git:https://github.com/tom-layton/Maven.git</connection>
     <developerConnection>scm:git:https://github.com/tom-layton/Maven.git</developerConnection>
-    <tag>root-pom-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
   
   <distributionManagement>
