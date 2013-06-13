@@ -10,6 +10,8 @@
   <description>
     Defines plugins and versions, default properties like Java home and version
   </description>
+  <inceptionyear>2013</inceptionyear>
+  <url>https://github.com/tom-layton/Maven</url>
   
   <prerequisites>
     <maven>3.0.4</maven>
@@ -21,11 +23,22 @@
 
   <!-- http://maven.apache.org/scm/git.html , see Working with branches -->
   <scm>
-    <connection>scm:git:https://github.com/tom-layton/Maven</connection>
-    <developerConnection>scm:git:https://github.com/tom-layton/Maven</developerConnection>
+    <url>https://github.com/tom-layton/Maven</url>
+    <connection>scm:git:https://github.com/tom-layton/Maven.git</connection>
+    <developerConnection>scm:git:https://github.com/tom-layton/Maven.git</developerConnection>
   </scm>
   
+  <distributionManagement>
+    <site>
+      <id>tom-pages</id>
+      <url>file://localhost/c:/snapshotviews/dist</url>
+    </site>
+  </distributionManagement>
+  
   <properties>
+    <!-- http://maven.apache.org/maven-release/maven-release-plugin/faq.html#credentials -->
+    <project.scm.id>toms-github-server</project.scm.id>
+    
     <default.java.home>C:/bea1034/jdk160_21</default.java.home>
     <default.java.version>1.6</default.java.version>
 
@@ -135,7 +148,7 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <arguments>-f pom.xml -DskipTests</arguments>
           <preparationGoals>clean install</preparationGoals>
-<!--           <goals>deploy</goals> -->
+          <goals>deploy</goals>
         </configuration>
       </plugin>
     </plugins>
